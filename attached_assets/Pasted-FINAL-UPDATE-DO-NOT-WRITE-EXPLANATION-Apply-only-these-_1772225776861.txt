@@ -1,0 +1,89 @@
+FINAL UPDATE – DO NOT WRITE EXPLANATION
+
+Apply only these changes.
+Do not redesign.
+Do not create duplicate screens.
+
+========================================
+1) REMOVE OLD WORLD MAP SCREEN
+========================================
+
+- Delete the old world map screen completely.
+- This mystical forest map becomes the ONLY map screen.
+- Navigation must not reference old map anymore.
+
+========================================
+2) GAME START RULES
+========================================
+
+When the game loads:
+
+Player must start with:
+
+Level: 1
+EXP: 0
+Score: 0
+HP: 100
+Attack: 10
+
+Only Level 1 unlocked.
+Level 2 and others locked.
+
+Map screen visible first.
+
+========================================
+3) LEVEL SYSTEM
+========================================
+
+- Clicking Level 1 starts the game.
+- Map hides.
+- Game screen shows.
+
+- When Level 1 is completed:
+    → Level 2 unlocks
+    → The center progress path extends downward toward Level 2
+    → Smooth animation required
+    → Must visually connect Level 1 to Level 2
+
+- Path must extend downward.
+- Never upward.
+
+========================================
+4) FLOATING GLOW PARTICLES (MANDATORY)
+========================================
+
+You must create a floating glowing particle animation system on the map screen.
+
+Requirements:
+
+- Small glowing particles
+- Firefly style
+- Slowly floating upward
+- Smooth fade in and fade out
+- Random positions
+- Continuous animation
+- Must be visible over the background
+- Must not block clicks
+- Must be generated dynamically with JavaScript
+- Must not be static background image
+- Must be real animated elements in DOM
+
+If particles are not visible, fix z-index and layering.
+
+This animation is REQUIRED.
+Do not skip it.
+
+========================================
+
+Final result must:
+
+✔ Only one map screen
+✔ Game starts Level 1
+✔ EXP 0
+✔ Score 0
+✔ Level 2 unlock after Level 1 complete
+✔ Path extends downward
+✔ Visible floating glowing particles
+
+Do not respond with explanation.
+Apply changes directly to project files.

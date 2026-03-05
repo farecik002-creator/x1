@@ -1,0 +1,163 @@
+Create a complete fantasy Match-3 RPG battle system and UI.
+
+IMPORTANT:
+- DO NOT switch to Autonomous Mode.
+- DO NOT ask questions.
+- Design visuals yourself.
+- Follow structure strictly.
+- Keep performance optimized.
+
+==================================================
+CORE LAYOUT (MANDATORY)
+==================================================
+
+Screen: Vertical 9:16 mobile only.
+
+LEFT SIDE:
+- Full gameplay area.
+- Enemy info (top).
+- Match-3 board (center).
+- Player info + skills (bottom).
+
+RIGHT SIDE:
+- Empty reserved character area.
+- No UI elements here.
+- Only background visible.
+- This space is for future 2D Live character.
+- Do NOT center the board.
+
+Layout must feel left-weighted.
+
+==================================================
+VISUAL STYLE
+==================================================
+
+Theme:
+- Mystic fantasy.
+- Ancient ruins or magical forest path.
+- Warm particles.
+- Cinematic depth.
+- Premium gold fantasy UI.
+
+Use:
+- Gold borders
+- Soft glow
+- Subtle particles
+- Clean gradients
+
+Avoid:
+- Heavy bloom
+- Expensive blur
+- Shader stacking
+- FPS drops
+
+==================================================
+LEVEL SYSTEM (MANDATORY)
+==================================================
+
+Add full level progression:
+
+Enemy Level:
+- Starts at 1
+- Increases every stage
+- Every 5 levels = Boss
+- Boss has higher HP and slight aura
+
+Player Level:
+- Gains EXP after each battle
+- Level up increases:
+    - Max HP (small increase)
+    - Attack (small increase)
+    - Crit chance (very small increase)
+- Scaling must be balanced
+- Game must not end too fast
+- Endless progression enabled
+
+Enemies never end.
+After level 400 continue scaling infinitely.
+
+==================================================
+BATTLE UI STRUCTURE
+==================================================
+
+TOP:
+Enemy Lv. X
+Red HP bar (gold border, soft glow)
+
+Combo Text:
+“Combo X +XXX% Damage”
+- Gold animated text
+- Scale animation
+- Smooth fade out
+
+CENTER:
+8x8 Match-3 board
+- Perfect square
+- Gold frame
+- Glossy tiles
+- Smooth swap
+- Cascade enabled
+
+Match Detection:
+- 3 normal
+- 4 creates special tile
+- 5 creates ultimate tile
+- T and L shapes supported
+
+4 Match:
+- Row or column clear
+- Medium glow
+
+5 Match:
+- Clears all same color
+- Stronger glow
+- But optimized performance
+
+BOTTOM:
+Player Lv. X
+Green HP bar (value inside)
+EXP bar with star indicators
+
+Skills:
+Heal (green)
+Bash (red)
+
+- Rounded fantasy buttons
+- Gold border
+- Cooldown circle indicator
+- Light press animation
+
+==================================================
+BALANCE RULES
+==================================================
+
+- No auto-win loops
+- No infinite cascade spam
+- Balanced randomness
+- 4 and 5 matches possible but not constant
+- Boss fights harder but fair
+- Game must feel long-term progression
+
+==================================================
+PERFORMANCE
+==================================================
+
+- Smooth animations
+- Lightweight particles
+- No excessive re-renders
+- Stable FPS in Replit preview
+
+==================================================
+FINAL RESULT
+==================================================
+
+Generate a fully playable battle screen
+with:
+
+- Left gameplay
+- Right empty character area
+- Mystic background
+- Level scaling
+- Endless enemies
+- Balanced RPG mechanics
+- Premium fantasy UI

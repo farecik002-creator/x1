@@ -1,0 +1,168 @@
+FINAL FIX – GREEN SPIRAL FOLLOW + FULL MAP LOGIC
+
+Do NOT redesign the theme.
+Do NOT change background.
+Do NOT remove mystical forest style.
+
+Apply everything exactly.
+
+========================================
+1) SINGLE MAP SCREEN
+========================================
+
+- Remove any duplicate World Map screen.
+- This current mystical forest map becomes the ONLY map.
+- When game loads → open this map directly.
+
+========================================
+2) INITIAL GAME STATE
+========================================
+
+When the game starts:
+
+let currentLevel = 1;
+let score = 0;
+let exp = 0;
+let playerLevel = 1;
+
+UI must show:
+
+Top left:
+LV 1
+
+Top right:
+EXP: 0 / 100
+Gold icon + 0
+
+Score must start at 0.
+EXP must start at 0.
+
+========================================
+3) LEVEL STRUCTURE
+========================================
+
+3 vertical centered nodes:
+
+Level 1:
+- Bottom
+- Glowing gold
+- Clickable
+
+Level 2:
+- Above
+- Locked
+- Not clickable
+
+Level 3:
+- Above
+- Locked
+- Not clickable
+
+Locked levels must not respond to click.
+
+========================================
+4) GREEN SPIRAL FOLLOW SYSTEM (IMPORTANT)
+========================================
+
+The green mystical spiral path in the center MUST FOLLOW progression.
+
+Current problem:
+It is static.
+
+Required behavior:
+
+When Level 1 is completed:
+- Unlock Level 2
+- Spiral path visually extends upward to Level 2
+- Smooth transition (CSS transition required)
+- No page reload
+
+When Level 2 is completed:
+- Unlock Level 3
+- Spiral extends further to Level 3
+- Smooth animation again
+
+Implementation rules:
+
+Create function:
+
+function completeLevel(levelNumber) {
+
+  if(levelNumber === 1){
+    unlock level 2
+    add class "extended-to-2" to spiral
+  }
+
+  if(levelNumber === 2){
+    unlock level 3
+    add class "extended-to-3" to spiral
+  }
+
+}
+
+CSS:
+
+.spiral-path {
+  height: initialHeight;
+  transition: height 0.6s ease;
+}
+
+.spiral-path.extended-to-2 {
+  height: largerHeightValue;
+}
+
+.spiral-path.extended-to-3 {
+  height: maximumHeightValue;
+}
+
+The path MUST visually connect:
+Level 1 → Level 2 → Level 3
+
+Do NOT fake it.
+Do NOT leave it static.
+The height MUST change dynamically.
+
+========================================
+5) LEVEL CLICK BEHAVIOR
+========================================
+
+When clicking unlocked level:
+- Game opens immediately
+- score = 0
+- exp = 0
+- Do not keep old values
+
+When level is completed:
+- completeLevel(currentLevel) must be called
+
+========================================
+6) FLOATING PARTICLES (MANDATORY)
+========================================
+
+The map screen MUST include visible floating glowing particles.
+
+Rules:
+- Small yellow/green lights
+- Slowly floating upward
+- Random slight horizontal movement
+- Infinite animation loop
+- Must be visible
+- Pure CSS or Canvas
+- Do NOT skip this
+- Do NOT say implemented if not visible
+
+If particles are not visible → implementation is incomplete.
+
+========================================
+7) CLEANUP
+========================================
+
+Remove:
+- Extra panels
+- Bottom navigation
+- Duplicate screens
+- Unused UI
+
+Keep layout centered.
+Mobile optimized.
+Keep mystical glow style.

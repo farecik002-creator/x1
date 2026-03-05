@@ -1,0 +1,198 @@
+Create a complete premium AAA-quality fantasy Match-3 RPG mobile game.
+
+IMPORTANT:
+- Do NOT switch to Autonomous Mode.
+- Do NOT ask questions.
+- Design visuals and UI yourself.
+- Keep performance optimized.
+- Build full system structure.
+
+==================================================
+CORE STRUCTURE
+==================================================
+
+Screen ratio: Vertical 9:16 mobile.
+
+Battle Screen Layout:
+
+LEFT SIDE:
+- Enemy info (top)
+- 8x8 Match-3 board (center)
+- Player info + skills (bottom)
+
+RIGHT SIDE:
+- Reserved character area (empty)
+- Only background + combo energy effects
+- No UI elements
+
+Board must be left-weighted.
+Do not center it.
+
+==================================================
+AAA VISUAL STYLE
+==================================================
+
+Theme:
+Mystical fantasy world.
+Ancient magical forest or floating ruins.
+
+Visual Quality:
+- Premium gold fantasy UI
+- Deep shadows
+- Soft glow effects
+- Subtle floating particles
+- Cinematic lighting
+- Clean gradients
+
+Grid Symbols:
+- High quality glossy tiles
+- Unique shapes (not basic squares)
+- Light reflection animation
+- Soft magical aura
+- Smooth swap animation
+- Premium destruction effects
+
+Match Effects:
+- 3 match: Clean burst
+- 4 match: Stronger flash + special tile
+- 5 match: Powerful explosion + ultimate tile
+- Effects must look AAA but stay lightweight.
+
+==================================================
+COMBO + EXP SYSTEM
+==================================================
+
+Combo system must scale damage and EXP.
+
+- Each combo increases damage multiplier.
+- EXP gained increases with combo chain.
+- Combo text:
+  “Combo X +XX% Damage”
+  Gold animated text.
+  Smooth scale animation.
+
+When combo happens:
+- Magical energy flies from board
+  to right empty character area.
+- Arc motion trail.
+- Light glow particles.
+- No heavy performance cost.
+
+==================================================
+ENEMY SYSTEM
+==================================================
+
+Enemies must attack player after player turn.
+
+- Enemy damage scales with level.
+- Balanced formula.
+- No one-shot kills.
+- Medium difficulty.
+
+Each enemy has:
+- Random fantasy name.
+- HP bar.
+- Normal enemies → red HP bar.
+- Boss enemies → GOLD HP bar only.
+
+Every 5 levels:
+- Boss appears.
+- Larger HP.
+- Slight aura effect.
+- Slightly stronger attack.
+
+Enemies never end.
+Infinite progression.
+After level 100+ continue scaling smoothly.
+
+==================================================
+PLAYER SYSTEM
+==================================================
+
+Player has:
+- Level
+- HP
+- Attack stat
+- EXP bar
+
+When leveling up:
+
+Pause battle.
+Show choice panel:
+
+Choose ONE:
+1) Increase Attack (permanent)
+2) Increase Max HP (permanent)
+
+Only one choice allowed.
+Balanced growth.
+Slow long-term scaling.
+
+==================================================
+WORLD MAP SYSTEM (CANDY STYLE)
+==================================================
+
+Create separate screen:
+
+Fantasy World Map.
+
+Design automatically.
+
+Features:
+- Vertical scroll map.
+- Path-based node progression.
+- Connected level circles.
+- Every 5th node = Boss node (bigger design).
+- Locked future nodes.
+- Completed nodes show star rating.
+
+Visual:
+- Floating islands or magical forest path.
+- Soft animated particles.
+- Premium gold UI accents.
+
+After win:
+Return to map.
+Unlock next node.
+
+==================================================
+BALANCE RULES
+==================================================
+
+- Medium difficulty.
+- No frustration spikes.
+- No easy infinite wins.
+- Boss fights harder but fair.
+- 4 and 5 matches rewarding but not overpowered.
+
+Game must feel:
+Progressive.
+Challenging.
+Addictive.
+Long-term playable.
+
+==================================================
+PERFORMANCE
+==================================================
+
+- Smooth animations.
+- No heavy shaders.
+- Optimized particles.
+- Stable FPS in Replit preview.
+
+==================================================
+FINAL RESULT
+==================================================
+
+Generate:
+
+- Premium AAA fantasy battle screen.
+- Infinite enemy progression.
+- Combo EXP scaling.
+- Enemy attack system.
+- Level-up stat choice.
+- Candy-style world map.
+- Boss every 5 levels.
+- Random enemy names.
+- Gold HP bar only for bosses.
+- Balanced medium difficulty.
